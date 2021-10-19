@@ -29,6 +29,6 @@ Conn(db_url, db_user, db_pass, db_data);
 app.use('/todo', TodoRoutes);
 
 const port = 3002;
-app.listen(process.env || port, () => {
+app.listen(process.env.PORT || port, () => {
     console.log(`App rodando (htttp://localhost:${port})`)
 });
