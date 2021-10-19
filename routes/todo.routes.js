@@ -9,7 +9,7 @@ const TodosController = new TodoController();
 router.get('/', TodosController.getTodos);
 
 //Rota GET by ID
-router.get('/', TodosController.getTodosById);
+router.get('/:id', TodosController.getTodosById);
 
 //Rota POST / Create
 router.post('/add', TodosController.createTodo);
